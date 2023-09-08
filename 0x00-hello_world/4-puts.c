@@ -9,7 +9,7 @@
 int main(void)
 {
 	/*Declare char to be passed to puts*/
-	char outstr[] = "with proper grammar, but the outcome is a piece of art";
+	char outstr[] = "\"Programming is like building a multilingual puzzle";
 
 	/*Writing to stdout*/
 	puts(outstr);
