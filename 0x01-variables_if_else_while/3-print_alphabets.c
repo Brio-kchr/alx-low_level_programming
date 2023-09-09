@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - Function contains our program
+ *
+ * Return: Should return 0 (Success)
+ */
+int main(void)
+{
+	char my_char;
+	for (my_char = 'a'; my_char <= 'z'; my_char++)
+	{
+		putchar(my_char);
+	}
+	char mychar;
+	for (mychar = 'A'; mychar <= 'Z'; mychar++)
+        {
+                putchar(mychar);
+        }
+	putchar('\n');
+	return (0);
+}
