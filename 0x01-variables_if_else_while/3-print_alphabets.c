@@ -9,14 +9,15 @@
 int main(void)
 {
 	char my_char;
+	char caps_char;
 	for (my_char = 'a'; my_char <= 'z'; my_char++)
 	{
 		putchar(my_char);
 	}
-	char mychar;
-	for (mychar = 'A'; mychar <= 'Z'; mychar++)
+	
+	for (caps_char = 'A'; caps_char <= 'Z'; caps_char++)
         {
-                putchar(mychar);
+                putchar(caps_char);
         }
 	putchar('\n');
 	return (0);
