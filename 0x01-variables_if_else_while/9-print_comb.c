@@ -16,10 +16,10 @@ int main(void)
 		if (my_ch != 9)
 		{
 			putchar(44);
+			putchar(32);
 		}
 		else
 			;	
-		putchar(32);
 	}
 	putchar(10);
 	return (0);
