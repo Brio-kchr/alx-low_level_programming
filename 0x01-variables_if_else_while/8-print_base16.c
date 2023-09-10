@@ -11,7 +11,7 @@ int main(void)
 	char my_char;
 	int counter;
 
-	for ( counter = 0 ; counter <= 9; counter++)
+	for (counter = 0 ; counter <= 9; counter++)
 		putchar('0' + counter);
 	for (my_char = 'a'; my_char <= 'f'; my_char++)
 	{
