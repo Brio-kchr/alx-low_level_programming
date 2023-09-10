@@ -12,14 +12,15 @@ int main(void)
 
 	for (my_ch = 0; my_ch < 10; my_ch++)
 	{
+		putchar(48 + my_ch);
 		if (my_ch != 9)
 		{
-			putchar(48 + my_ch);
 			putchar(44);
 		}
 		else
-			putchar(48 + my_ch);
+			;	
 		putchar(32);
 	}
+	putchar(10);
 	return (0);
 }
