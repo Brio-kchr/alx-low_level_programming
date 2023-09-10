@@ -8,18 +8,18 @@
  */
 int main(void)
 {
-	int my_char;
+	int my_ch;
 
-	for (my_char = 0; my_char < 10; my_char++)
+	for (my_ch = 0; my_ch < 10; my_ch++)
 	{
-		if(my_char != 9)
+		if(my_ch != 9)
 		{
-			putchar(48 + my_char);
+			putchar(48 + my_ch);
 			putchar(44);
 			putchar(32);
 		}
 		else
-			putchar(48 + my_char);
+			putchar(48 + my_ch);
 	}
 	return (0);
 }
