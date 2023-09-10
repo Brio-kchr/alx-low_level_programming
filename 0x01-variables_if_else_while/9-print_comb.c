@@ -15,11 +15,11 @@ int main(void)
 		if (my_ch != 9)
 		{
 			putchar(48 + my_ch);
-			putchar(32);
+			putchar(44);
 		}
 		else
 			putchar(48 + my_ch);
-		putchar(44);
+		putchar(32);
 	}
 	return (0);
 }
