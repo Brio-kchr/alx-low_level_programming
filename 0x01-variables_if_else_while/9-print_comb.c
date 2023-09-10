@@ -21,7 +21,7 @@ int main(void)
 		else
 		{
 			;
-		}	
+		}
 	}
 	putchar(10);
 	return (0);
