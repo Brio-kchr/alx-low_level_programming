@@ -19,7 +19,9 @@ int main(void)
 			putchar(32);
 		}
 		else
-			;	
+		{
+			;
+		}	
 	}
 	putchar(10);
 	return (0);
