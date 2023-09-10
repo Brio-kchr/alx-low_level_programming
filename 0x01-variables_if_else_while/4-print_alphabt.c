@@ -13,7 +13,7 @@ int main(void)
 	for (my_char = 'a'; my_char <= 'z'; my_char++)
 	{
 		if (my_char == 'q' || my_char == 'e')
-
+			;
 		else
 			putchar(my_char);
 	}
