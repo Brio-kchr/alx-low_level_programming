@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /*Function prints a string*/
 
 int print_str(void)
@@ -39,4 +40,19 @@ int print_alphabet_x10(void)
 	}
 
         return (0);
+}
+
+/*Function to check lower or uppercase*/
+int _islower(int c)
+{
+	int char_case;
+
+	if(isupper(c))
+	{
+		char_case = 0;
+	}
+	else
+		char_case=1;
+
+	return (char_case);
 }
