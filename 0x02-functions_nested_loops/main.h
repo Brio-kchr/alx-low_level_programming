@@ -26,16 +26,16 @@ int print_alphabet(void)
 /*Function to print all lowercase letters 10 times*/
 int print_alphabet_x10(void)
 {
-        char ch;
 	int n=0;
-	while(n<=10)
+	while(n < 10)
 	{
+        	char ch;
         	for(ch = 'a' ; ch <= 'z' ; ch++)
         	{
                 	putchar(ch);
         	}
 
-        putchar('\n');
+        	putchar('\n');
 	}
 
         return (0);
