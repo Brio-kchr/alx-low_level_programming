@@ -1,13 +1,21 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
 
-
-int main(void)
+/*Function to print all lowercase letters*/
+int print_alphabet(void)
 {
-    print_alphabet();
-    return (0);
+        char ch;
+
+        for(ch = 'a' ; ch <= 'z' ; ch++)
+        {
+                putchar(ch);
+        }
+
+        putchar('\n');
+
+	return (0);
 }
