@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry into the program
  * Program prints _putchar to stdout
@@ -9,7 +10,6 @@ int main(void)
 	/*Declarations*/
 
 	/*Statements*/
-	printf("_putchar\n");
-
+	print_str();
 	return (0);
 }
