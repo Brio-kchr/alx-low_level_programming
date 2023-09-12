@@ -41,4 +41,5 @@ int print_alphabet_x10(void)
 
         return (0);
 }
+
 int _islower(int c);
