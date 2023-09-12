@@ -24,7 +24,7 @@ int print_alphabet(void)
 }
 
 /*Function to print all lowercase letters 10 times*/
-int print_alphabet(void)
+int print_alphabet_x10(void)
 {
         char ch;
 	int n=0;
