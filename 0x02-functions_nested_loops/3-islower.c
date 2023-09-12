@@ -1,3 +1,5 @@
+#include "main.h"
+
 /*Function to check lower or uppercase*/
 int _islower(int c)
 {
