@@ -34,7 +34,7 @@ int print_alphabet_x10(void)
         	{
                 	putchar(ch);
         	}
-
+		n++;
         	putchar('\n');
 	}
 
