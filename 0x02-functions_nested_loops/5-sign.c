@@ -11,12 +11,12 @@ int print_sign(int n)
 {
 	int print_count;
 
-	if (n < 59 && n >= 49)
+	if ( n > 0)
 	{
 		print_count = 1;
 		_putchar('+');
 	}
-	else if (n == 48)
+	else if (n == 0)
 	{
 		print_count = 1;
 		_putchar('0');
