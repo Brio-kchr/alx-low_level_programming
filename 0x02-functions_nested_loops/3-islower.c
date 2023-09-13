@@ -14,7 +14,6 @@ int _islower(int c)
 
 	if (c <= 122 && c >= 97)
 	{
-	
 		print_count = 1;
 	}
 	else
