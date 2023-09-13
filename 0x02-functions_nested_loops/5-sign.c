@@ -18,12 +18,12 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		print_count = 1;
+		print_count = 0;
 		_putchar('0');
 	}
 	else
 	{
-		print_count = 0;
+		print_count = -1;
 		_putchar('-');
 	}
 
