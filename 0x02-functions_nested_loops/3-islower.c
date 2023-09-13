@@ -15,7 +15,7 @@ int _islower(int c)
 
 	for (count = 'a'; count <= 'z'; count++)
 	{
-		if (c == int count)
+		if (c == (int)count)
 			print_count = 1;
 		else
 			print_count = 0;
