@@ -8,11 +8,11 @@
 
 int _islower(int c)
 {
-	int count;
+	char count;
 	int print_count = 0;
 
 
-	for (count = 97; count <= 122; count++)
+	for (count = 'a'; count <= 'z'; count++)
 	{
 		if (c == count)
 			print_count = 1;
