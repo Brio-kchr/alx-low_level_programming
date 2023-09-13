@@ -1,3 +1,3 @@
 int _putchar(char c);
 
-int print_str(char arr[]);
+void print_alphabet_x10(void);
