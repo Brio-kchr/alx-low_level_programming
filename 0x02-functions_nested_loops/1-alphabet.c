@@ -1,5 +1,9 @@
 #include "main.h"
 
+/** print_alphabet -is a function that prints alphabets
+ *
+ * Return: Void fuction does not return anything
+ */
 
 void print_alphabet(void)
 {
@@ -10,6 +14,4 @@ void print_alphabet(void)
 		_putchar(count);
 	}
 	_putchar('\n');
-
-	return;
 }
