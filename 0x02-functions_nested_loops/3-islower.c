@@ -9,16 +9,17 @@
 
 int _islower(int c)
 {
-	char count;
+
 	int print_count;
 
-
-	for (count = 'a'; count <= 'z'; count++)
+	if (c <= 122 && c >= 97)
 	{
-		if (c == (int)count)
-			print_count = 1;
-		else
-			print_count = 0;
+	
+		print_count = 1;
+	}
+	else
+	{
+		print_count = 0;
 	}
 	return (print_count);
 }
