@@ -1,19 +1,21 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry into the program
  * Program prints _putchar to stdout
  * Return: Returns zero to indicate success
  */
-int print_str(char arr[])
-{	
-	int d = 0;
-
-        for(d=0 ;arr[d] != '\0' ; d++)
-	{
-		putchar(arr[d]);
-	}
-	putchar('\n');
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
         return (0);
 }
