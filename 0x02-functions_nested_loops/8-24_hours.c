@@ -15,24 +15,21 @@ void jack_bauer(void)
 
 	for (hour2 = 48; hour2 < 51; hour2++)
 	{
-		if ((hour2 == 50) && (hour1 == 51) && (min2 == 53) && (min1 == 57))
-		{
-			break;
-		}
+		for (hour1 = 48; hour1 < 58; hour1++)
+			for (min2 = 48; min2 < 54; min2++)
+				for (min1 = 48; min1 < 58; min1++)
+				{
+					/*To ensure we are with 00 to 23*/
+					if (hour2 == '2' && hour1 >= '4')
+						break;
 
-		else
-		{
-			for (hour1 = 48; hour1 < 58; hour1++)
-				for (min2 = 48; min2 < 54; min2++)
-					for (min1 = 48; min1 < 58; min1++)
-					{
-						_putchar(hour2);
-						_putchar(hour1);
-						_putchar(':');
-						_putchar(min2);
-						_putchar(min1);
-						_putchar('\n');
-					}
-		}
+					/*print the current time*/
+					_putchar(hour2);
+					_putchar(hour1);
+					_putchar(':');
+					_putchar(min2);
+					_putchar(min1);
+					_putchar('\n');
+				}
 	}
 }
