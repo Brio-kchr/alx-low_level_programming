@@ -20,16 +20,18 @@ void jack_bauer(void)
 			break;
 		}
 
-		for (hour1 = 48; hour1 < 58; hour1++)
-			for (min2 = 48; min2 < 54; min2++)
-				for (min1 = 48; min1 < 58; min1++)
-				{
-					_putchar(hour2);
-					_putchar(hour1);
-					_putchar(':');
-					_putchar(min2);
-					_putchar(min1);
-					_putchar('\n');
-				}
+		else
+		{
+			for (hour1 = 48; hour1 < 58; hour1++)
+				for (min2 = 48; min2 < 54; min2++)
+					for (min1 = 48; min1 < 58; min1++)
+					{
+						_putchar(hour2);
+						_putchar(hour1);
+						_putchar(':');
+						_putchar(min2);
+						_putchar(min1);
+						_putchar('\n');
+					}
 	}
 }
