@@ -15,7 +15,7 @@ void jack_bauer(void)
 
 	for (hour2 = 48; hour2 < 51; hour2++)
 	{
-		if ((hour2 == 48) && (hour1 == 51) && (min2 == 53) && (min1 == 57))
+		if ((hour2 == 50) && (hour1 == 51) && (min2 == 53) && (min1 == 57))
 		{
 			break;
 		}
