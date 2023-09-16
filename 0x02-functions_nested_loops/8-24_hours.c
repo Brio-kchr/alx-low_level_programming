@@ -25,4 +25,6 @@ void jack_bauer(void)
 					_putchar(min1);
 					_putchar('\n');
 				}
+		if ((hour2 == 48 ) && (hour1 == 51) && (min2 == 53) && (min1 == 57))
+			break;
 }
