@@ -13,10 +13,10 @@ void jack_bauer(void)
 	int hour1;
 	int hour2;
 
-	for (hour2 = 0; hour2 < 3; hour2++)
-		for (hour1 = 0; hour1 < 10; hour1++)
-			for (min2 = 0; min2 < 7; min2++)
-				for (min1 = 0; min1 < 10; min1++)
+	for (hour2 = 48; hour2 < 51; hour2++)
+		for (hour1 = 48; hour1 < 58; hour1++)
+			for (min2 = 48; min2 < 54; min2++)
+				for (min1 = 48; min1 < 58; min1++)
 				{
 					_putchar(hour2);
 					_putchar(hour1);
