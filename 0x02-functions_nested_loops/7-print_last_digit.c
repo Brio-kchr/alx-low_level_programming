@@ -10,13 +10,13 @@
 
 int print_last_digit(int c)
 {
-	long long int n = 0;
-	long long int abs = 0;
+	long int n = 0;
+	long int abs = 0;
 
 	if (c < 0)
 	{
-		abs = -1LL * c;
-		n = c % 10;
+		abs = -1L * c;
+		n = abs % 10;
 	}
 	else
 	{
