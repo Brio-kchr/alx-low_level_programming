@@ -10,11 +10,12 @@
 
 int print_last_digit(int c)
 {
-	int n = 0;
+	long long int n = 0;
+	long long int abs = 0;
 
-	if(c < 0)
+	if (c < 0)
 	{
-		c = -1 * c;
+		abs = -1LL * c;
 		n = c % 10;
 	}
 	else
