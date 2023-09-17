@@ -20,6 +20,8 @@ void times_table(void)
 			result = i * j;
 			if (result <= 9)
 			{
+				if (j != 0)
+					_putchar(' ');
 				_putchar('0' + result);
 
 				if (j != 9)
