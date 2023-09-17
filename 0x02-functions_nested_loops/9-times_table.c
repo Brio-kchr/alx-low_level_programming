@@ -1,17 +1,23 @@
 #include "main.h"
 
-/**.
+/**
  * times_table - Check description
- * 
- * Description: checks whether char is lowercase
+ * Description: prints the 9 times table starting from zero
  * Return: Nothing.
  */
 
 
 void times_table(void)
 {
-	if (c < 0)
+	int i;
+	int j;
+	int result;
+
+	for (i = 0; i <= 0; i++)
 	{
-		c = (-1) * c;
+		for (j = 0; j <= 0; j++)
+			_putchar('0' + result);
+			_putchar(',');
+		_putchar('\n');
 	}
 }
