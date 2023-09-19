@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - Check description
+ * swap_int - Check description
  * description - Swap values of two intergers
  * @a:  pointer to the first variable
  * @b:  pointer to second variable
