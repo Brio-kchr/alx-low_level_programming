@@ -14,7 +14,7 @@ void rev_string(char *s)
 	int j = 0;
 	char cp;
 	/*Get the size of the string*/
-	while (*(s + i) != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
