@@ -12,17 +12,17 @@ void rev_string(char *s)
 {
 	int i = 0;
 	int j = 0;
-	char *cp;
-
+	char cp;
+	/*Get the size of the string*/
 	while (*(s + i) != '\0')
 	{
-		*(cp + i) = *(s + i);
 		i++;
 	}
-	while (i > 0)
+	while (j < i--)
 	{
-		*(s + j) = *(cp + i - 1);
-		i--;
+		cp = s[j];
+		s[j++] = s[i];
+		s[i] = cp;
 	}
 
 	_putchar('\n');
