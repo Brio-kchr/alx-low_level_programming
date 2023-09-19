@@ -13,13 +13,13 @@ void puts2(char *str)
 	int i = 0;
 	int j = 0;
 	/*Get the size of the string*/
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
 
 	for (; j < i; j += 2)
 	{
-		_putchar(j);
+		_putchar(str[j]);
 	}
 }
