@@ -19,7 +19,7 @@ char *_strcat(char *dest, char *src)
 
 	/*Copying value from source to dest*/
 	while (*src)
-	{	
+	{
 		*dest++ = *src++;
 	}
 
