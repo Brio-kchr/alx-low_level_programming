@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 
 	/*Copying value frm source to dest*/
 	while (*src)
-		*(dest + i)++ = *src++;
+		*(dest + i + 1) = *src++;
 
 	return (j);
 }
