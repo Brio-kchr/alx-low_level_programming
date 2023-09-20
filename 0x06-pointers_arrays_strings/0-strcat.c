@@ -13,14 +13,15 @@ char *_strcat(char *dest, char *src)
 {
 	/*Store address of dest pointer*/
 	char *j = dest;
-	int i = 0;
 
-	while (src[i] != '\0')
-		i++;
+	while (*dest != '\0')
+		dest++;
 
-	/*Copying value frm source to dest*/
+	/*Copying value from source to dest*/
 	while (*src)
-		*(dest + i + 1) = *src++;
+	{	
+		*dest++ = *src++;
+	}
 
 	return (j);
 }
