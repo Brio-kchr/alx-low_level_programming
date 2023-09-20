@@ -15,10 +15,17 @@ char *_strncat(char *dest, char *src, int n)
 {
 	/*Store address of dest pointer*/
 	char *j = dest;
+	int i = 0;
 
 	while (*dest != '\0')
 		dest++;
 
+	/*Get lengh of SRC*/
+	while (*src != '\0')
+		i++;
+	/*Ensure we do not access non existent memory*/
+	if (n > i)
+		n = i;
 	/*Copying value from source to dest*/
 	while (n > 0)
 	{
