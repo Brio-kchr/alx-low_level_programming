@@ -13,7 +13,8 @@ char *cap_string(char *dest)
 {
 	/*Store address of dest pointer*/
 	char *j = dest;
-	int arr[] = {9, 10, 32 - 34, 40, 41, 44, 46, 59, 63, 123, 125};
+	char  arr[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?',
+		'"', '(', ')', '{', '}' };
 
 	while (*dest != '\0')
 	{
