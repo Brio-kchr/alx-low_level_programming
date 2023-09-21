@@ -24,5 +24,6 @@ char *leet(char *s)
 			if (s[i] == letts[cnt])
 				s[i] = encode[cnt];
 		}
+		i++;
 	return (j);
 }
