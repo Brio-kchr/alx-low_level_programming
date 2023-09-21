@@ -13,26 +13,14 @@
 int _strcmp(char *s1, char *s2)
 {
 	/*Counter declarations*/
-	int j = 0;
-	int i = 0;
-	int k = 0;
 	/*Perform comparisons*/
 	while (*s1 && *s2)
 	{
-		if (*s1 == *s2)
-			k++;
-		else if (*s1 > *s2)
-			i++;
-		else
-			j++;
+		if (*s1 != *s2)
+			return (*s1 - *s2);
 		s1++;
 		s2++;
 	}
 
-	if (i > j && i > k)
-		return (i);
-	else if (k > j && k > i)
-		return (0);
-	else
-		return (-j);
+	return (*s1 - *s2);
 }
