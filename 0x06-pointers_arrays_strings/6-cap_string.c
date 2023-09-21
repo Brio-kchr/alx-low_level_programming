@@ -20,14 +20,14 @@ char *cap_string(char *dest)
 	while (dest[a])
 	{
 		int i = 0;
-		
+
 		if (a == 0 && (dest[a] >= 'a' && dest[a] <= 'z'))
 			dest[a] -= 32;
 
 		for ( ; i < 14; i++)
 		{
 			if (dest[a] == arr[i] && (dest[a + 1] >= 'a' &&	dest[a + 1] <= 'z'))
-			{	
+			{
 				dest[a + 1] -= 32;
 			}
 		}
