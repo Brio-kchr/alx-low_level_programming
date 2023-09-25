@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "stddef.h"
 /**
  * *_strchr - gets first occurence of char c
  * in a string or NULL if not found
