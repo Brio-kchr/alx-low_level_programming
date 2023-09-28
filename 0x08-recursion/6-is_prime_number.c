@@ -27,12 +27,16 @@ int is_prime_number(int n)
 int _prime(int x, int n)
 {
 	if (n == x)
+	{
 		return (1);
+	}
 
 	/*Base case*/
 	if (n % x == 0)
+	{
 		return (0);
+	}
 
 	x++;
-	_prime(x, n);
+	return (_prime(x, n));
 }
