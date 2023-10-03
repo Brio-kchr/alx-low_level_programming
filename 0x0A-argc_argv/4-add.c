@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			x = strtol(*argv, NULL, 10);
-			if (x == 0)
+			if (x <= 0)
 			{
 				if (**argv != '0')
 				{
