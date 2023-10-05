@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * *_str_concat - Concatenates two strings
+ * *str_concat - Concatenates two strings
  * @s1: First string to be cocatenated
  * @s2: Second string to be concatenated
  * Return: Returns pointer to a newly allocated
