@@ -13,12 +13,12 @@
 int main(int argc, char *argv[])
 {
 	int (*temp)(int, int);
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	
 	temp = get_op_func(*(argv + 2));
 	if (temp == NULL)
 	{
@@ -26,6 +26,6 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	printf("%d\n",temp(atoi(*(argv + 1)), atoi(*(argv + 3))));
+	printf("%d\n", temp(atoi(*(argv + 1)), atoi(*(argv + 3))));
 	return (0);
 }
