@@ -1,51 +1,51 @@
-#include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
- * print_all - A function prints anyting.
- * @format: A list of type of arguments passed to the function.
- * Return: Nothing
- */
+* print_all - print char, integer, float and string
+* @format: format
+*/
 void print_all(const char * const format, ...)
 {
-	va_list ap;
-	char *temp;
-	int i = 0;
+	va_list arguments;
+	unsigned int c = 0, stat = 0;
+	char *str;
 
-	va_start(ap, format);
-	if (format)
+	va_start(arguments, format);
+	while (format && format[c] != '\0')
 	{
-		while (format[i])
-		{
-			switch (format[i])
-			{
-				case 'c':
-					printf("%c", (char) va_arg(ap, int));
-					break;
-				case 'i':
-					printf("%d", va_arg(ap, int));
-					break;
-				case 'f':
-					printf("%f", (float) va_arg(ap, double));
-					break;
-				case 's':
-					temp = va_arg(ap, char*);
-					if (temp != NULL)
-					{
-						printf("%s", temp);
-						break;
-					}
-					printf("(nil)");
-					break;
-			}
-			if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
-						format[i] == 's') && format[(i + 1)] != '\0')
-				printf(", ");
-			i++;
-		}
-		va_end(ap);
-		printf("\n");
+		switch (format[c])
+		{ case 'c':
+			switch (stat)
+			{ case 1: printf(", "); }
+			stat = 1;
+			printf("%c", va_arg(arguments, int));
+			break;
+			case 'i':
+			switch (stat)
+			{ case 1: printf(", "); }
+			stat = 1;
+			printf("%i", va_arg(arguments, int));
+			break;
+		case 'f':
+			switch (stat)
+			{ case 1: printf(", "); }
+			stat = 1;
+			printf("%f", va_arg(arguments, double));
+			break;
+		case's':
+			switch (stat)
+			{ case 1: printf(", "); }
+			stat = 1;
+			str = va_arg(arguments, char*);
+			if (str)
+			{ printf("%s", str);
+			break; }
+			printf("%p", str);
+			break; }
+		c++;
 	}
+	printf("\n");
+	va_end(arguments);
 }
