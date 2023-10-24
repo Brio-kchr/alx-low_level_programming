@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * print_listint - Function that prints all the
- * elements of a list.
+ * listint_len - Function that count all the
+ * elements in a list.
  * @h: Pointer to the list to be printed
  * Return: returns the number of elements in the
  * list
  */
 
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	int nodes = 0;
 
