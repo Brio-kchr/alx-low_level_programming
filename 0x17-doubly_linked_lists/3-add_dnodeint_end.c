@@ -4,9 +4,10 @@
 #include <stdio.h>
 
 /**
- * dlistint_len - function that prints all the elements of a dlistint_t list
- * @h : Points to the head node of the list
- * Return: number of elements in the list
+ * add_dnodeint_end - function prints all the elements of a dlistint_t list
+ * @head : Points to the head node of the list
+ * @n : element to be added at end
+ * Return: address of the element added in the list
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
