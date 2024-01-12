@@ -19,12 +19,14 @@ size_t print_dlistint(const dlistint_t *h)
 	{
 		return (EXIT_FAILURE);
 	}
-	*new = *h;
-	while (new)
+	if (h)
 	{
-		size++;
-		printf("%d\n", new->n);
-		new = new->next;
-	}
+		*new = *h;
+		while (new)
+		{
+			size++;
+			printf("%d\n", new->n);
+			new = new->next;
+		}
 	return (size);
 }
