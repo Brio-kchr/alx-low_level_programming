@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- * sum_dnodeint - function that gets sum of all elements
+ * sum_dlistint - function that gets sum of all elements
  * of a dlistint_t list
  * @head : Points to the head node of the list
  * Return: returns nth node at a certain index
