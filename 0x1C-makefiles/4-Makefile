@@ -1,0 +1,39 @@
+# Useful makefile to compile school.c- into a named executable
+# # while using variables and multiple targets
+
+# Set compiler to be used
+CC=gcc
+
+# C compliation flags
+CFLAGS= -Wall -Werror -Wextra -pedantic
+
+# Source files to be compiled
+SRC= main.c school.c
+
+# Object files to be linked to our final executable
+OBJ=$(patsubst %.c,%.o,$(SRC))
+
+#Name of the final executable
+NAME=school
+
+# Program to delete files
+RM=rm -f
+
+all: $(NAME)
+       
+
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $@ $^
+
+%.o:%.c
+	$(CC) $(CFLAGS) -c -o $@ $^
+
+oclean:
+	-$(RM) $(OBJ)
+
+clean:
+	-$(RM) *~ *.swp $(NAME)
+
+fclean: clean oclean
+
+re: oclean all
