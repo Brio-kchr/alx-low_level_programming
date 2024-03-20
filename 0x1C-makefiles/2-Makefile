@@ -9,12 +9,3 @@ $(NAME): main.o school.o
 
 %.o:%.c
 	$(CC) -c -o $@ $^
-
-oclean:
-	rm -f *.o
-
-clean:
-	rm -f *~ *.swp $(NAME)
-
-fclean: 
-	rm -f *~ *.swp *.o
