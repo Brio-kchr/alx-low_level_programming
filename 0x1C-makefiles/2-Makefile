@@ -1,10 +1,23 @@
-CC=gcc
-SRC= main.c school.c
-OBJ=$(patsubst %.c,%.o,$(SRC))
-NAME=school
-all: $(NAME)
+# Useful makefile to compile school.c- into a named executable
+# # while using variables and multiple targets
 
-$(NAME): main.o school.o
+# Set compiler to be used
+CC=gcc
+
+# Source files to be compiled
+SRC= main.c school.c
+
+# Object files to be linked to our final executable
+OBJ=$(patsubst %.c,%.o,$(SRC))
+
+#Name of the final executable
+NAME=school
+
+
+all: $(NAME)
+       
+
+$(NAME): $(OBJ)
 	$(CC) -o $@ $^
 
 %.o:%.c
